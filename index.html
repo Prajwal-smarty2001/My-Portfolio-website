@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/55fbed76ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header"> 
+        <div class = "container">
+        <nav>    
+        <img src="images/logo.jpg" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#Services">Services</a></li> -->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars"  onclick="opnemenu()"></i>
+        </nav>
+        <div class = "header-text">
+            <p>Engineer grad @ BMSIT <br> ML guy || Data analyst geek || Web-Designer</p>
+            <h1> Hi, I'm <span>Prajwal B P </span> <br> from Banglore</h1>
+        </div>
+    </div>
+    </div>
+<!----- about ----->
+<div id = "about">
+    <div class = "container">
+        <div class = "row">
+            <div class = "about-col-1"><img src = "images/new.jpg"></div>
+            <div class = "about-col-2"><h1 class = "sub-title"> About me</h1>
+                <p> 
+                        As an experienced and passionate engineer with a drive for innovation, I thrive in dynamic environments. My technical skills in C, Python, HTML, CSS, and MATLAB, along with knowledge in Web Development and Data Analytics, enable me to deliver high-quality results. I value teamwork, problem-solving, and building strong relationships with colleagues and clients. I'm excited to embrace new challenges and continuously grow in a supportive work environment. Proud to have interned at Sparks Foundation in Data Analytics and completed Python mini projects in areas like OpenCV, Data Science, Mathematics, and Fourier concepts, starting from scratch
+                </p>
+                    <div class = "tab-titles">
+                        <p class = "tab-links active-link"  onclick= "opentab('skills')">Skills</p>
+                        <p class = "tab-links"  onclick= "opentab('experience')">Experience</p>
+                        <p class = "tab-links"  onclick= "opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id = "skills">
+                <ul>
+                    <li><span>Python, C programming, Java</span><br>As programming language</li>
+                    <li><span>Data analytics, Tensorflow, Matlab</span><br>For Machine learning</li>
+                    <li><span>SQL</span><br>Data access in a Database</li>
+                    <li><span>Html-CSS, Figma UI/UX </span><br>Designing Web/App interface & Frontend development</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "experience">
+                <ul>
+                    <li><span>2021</span><br>Business & Data analytics at Sparks Foundation </li>
+                    <li><span>2022</span><br>Data analytic inter at Yoshops</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "education">
+                <ul>
+                    <li><span>BE in Electronics & comm.</span><br>BMS Institute of technology & Management <br> Banglore 2019-23 <span><b>8.03 CGPA</b> </span> </li>
+                    <li><span>Class XII</span><br> Vyshnavi Chetana PU College<br> Davangere 2018-19  <span> <b>85.33 %</b></span> </li>
+                    <li><span>Class X</span><br> S.Y.N.S Highschool  <br> Davangere 2017 <span><b>91.67 %</b> </span><li>
+                </ul>
+            </div>
+        </div>
+    </div>   
+</div>
+<!--------------------------------------services -------------------------------------------------->
+<!-- <div id = "Services">
+    <div class="container">
+        <h1 class = "sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Sed nulla nibh,
+                    tincidunt sit amet sapien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2> UI/UX Design</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Sed nulla nibh,
+                    tincidunt sit amet sapien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2> App Design</h2>
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Sed nulla nibh,
+                    tincidunt sit amet sapien quis.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- -------------- portfolio ------------- -->
+<div id = "portfolio">
+    <div class = "container">
+        <h1 class = "sub-title"> My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-voice.jpg">
+                    <div class="layer">
+                        <h3>Voice-cloning-Model</h3>
+                        <p>
+                            This presents a voice cloning model that can generate a synthetic voice that sounds like a specific person ,This model is able to generate speech from text input and it should be able to reproduce the unique vocal characteristics of the target speaker
+                        </p> <a href="#"><i class = "fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/work-portfolio.png">
+                <div class="layer">
+                    <h3>My Portfolio WebDesign</h3>
+                    <p> A portfolio website is an essential tool for web designers to display their skills which is done here, make a strong first impression, and attract potential clients or employers.
+                        This visual evidence can have a powerful impact on potential clients or employers, as they can see the quality of my work firsthand.
+                    </p> <a href="#"><i class = "fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-lung.png">
+                <div class="layer">
+                    <h3>Lung Cancer Detection using CNN</h3>
+                    <p>
+                        This is Lung Cancer Detection using Deep Learning We collected data from Kaggle The dataset contains CT-scan of NON-SMALL CELL LUNG CANCER *Adenocarcinoma *Large cell carcinoma *Squamous cell carcinoma *Normal
+                    </p> <a href="#"><i class = "fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Prajwal-smarty2001?tab=repositories" class = "btn">See more..</a>
+    </div>
+</div>
+<!-- ---------- Contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left"> 
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>prajwalbelludi2001@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 84311-01084</p>
+            <div class="social-icon">
+                 <a href="https://www.instagram.com/prajwal_belludi/">
+                <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/prajwal-b-p-914935214/">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Prajwal-smarty2001">
+                    <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.hackerearth.com/@prajwal885">
+                    <i class="fa-brands fa-hackerrank"></i></a>    
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">
+                Download My CV
+            </a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name = "Name" placeholder="Your Name" required>
+                <input type="email" name = "Email" placeholder="Your mail" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">Well !, You can contact me above with your details</span>
+        </div>
+    </div>
+        <div class="copy-right">
+            <p>Copyright Ⓒ Prajwal. Made with <i class="fa-solid fa-book-open-reader"></i> self learning in 2023</p>
+        </div>
+</div>
+
+<script>
+        var tablinks = document. getElementsByClassName ("tab-links");
+        var tabcontents = document. getElementsByClassName ("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function opnemenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysJfkQP8CSzoa6TGpnc_3MRBlOuPl2CenJDHhgPGDAgojQIxpW48SqfpV1_Me_70lX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!😊"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body> 
+</html>
